@@ -1,13 +1,16 @@
 {
-  "version": 1,
+  "version": 2,
   "created_at": "2026-03-09T18:30:00.000Z",
   "aircraft_count": 2,
-  "total_records": 5,
+  "total_records": 7,
   "total_batches": 1,
   "aircraft": [
     {
       "aircraft_id": "N48ZA",
-      "record_count": 3,
+      "make": "Piper",
+      "model": "PA-28-181 Archer III",
+      "total_time_hours": 4125.3,
+      "record_count": 4,
       "chain_head": "c69ffef2d514d503db96c79e90a1eeff85c7ed1f59d2e05b81ccfec71a21a136",
       "records": [
         {
@@ -19,7 +22,18 @@
           "mechanic_signature": null,
           "ipfs_cid": "QmcPToVLo2rwQJqKkz8j3ay7pFvx2LK7WGsEU8y2yCXGpS",
           "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
-          "created_at": "2026-03-09T08:00:00.000Z"
+          "created_at": "2026-03-01T08:00:00.000Z",
+          "data": {
+            "date_reported": "2026-03-01",
+            "description": "Nosewheel shimmy observed during taxi. Vibration increases above 15 knots ground speed. Shimmy dampener may be worn.",
+            "ata_chapter": "32",
+            "priority": "grounding",
+            "status": "closed",
+            "flight_hours_at": 4100.0,
+            "reported_by_name": "Sarah Chen",
+            "reported_by_cert_type": "pilot",
+            "reported_by_cert_number": "ATP-3384821"
+          }
         },
         {
           "record_hash": "281cdc9e751a9ae099f015dd8efce6def32b7dad3fc1d0992fbfb46cffe5023f",
@@ -27,10 +41,44 @@
           "record_type": "corrective_action",
           "record_id": "a1b2c3d4-0001-4000-8000-000000000002",
           "server_signature": "2114b7a3c92b50c24463...",
-          "mechanic_signature": null,
+          "mechanic_signature": "fa3e991b7c5d440811...",
           "ipfs_cid": "QmT96dA5Au2b7WMSY3cKy8QHrrDR4YQajRZqze2aDKmLXd",
           "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
-          "created_at": "2026-03-09T12:00:00.000Z"
+          "created_at": "2026-03-02T14:00:00.000Z",
+          "data": {
+            "discrepancy_id": "a1b2c3d4-0001-4000-8000-000000000001",
+            "date_performed": "2026-03-02",
+            "description": "Replaced nosewheel shimmy dampener assembly",
+            "ata_chapter": "32",
+            "work_performed": "Removed nosewheel shimmy dampener P/N 452-180. Inspected nosewheel fork for wear and cracks — serviceable. Installed new shimmy dampener P/N 452-180 S/N SD-29841. Torqued dampener bolts to 125 in-lbs per Piper SB-1134. Greased nosewheel bearing. Performed ground taxi test — no shimmy at any speed up to 30 knots.",
+            "return_to_service": true,
+            "return_to_service_date": "2026-03-02",
+            "performed_by_name": "Jake Torres",
+            "cert_type": "ap",
+            "cert_number": "AP-4482917",
+            "labor_hours": 2.5,
+            "parts_cost": 385.00,
+            "labor_cost": 212.50,
+            "total_cost": 597.50,
+            "parts": [
+              {
+                "action": "removed",
+                "part_number": "452-180",
+                "serial_number": "SD-18723",
+                "description": "Shimmy dampener assy, nosewheel",
+                "condition": "scrap"
+              },
+              {
+                "action": "installed",
+                "part_number": "452-180",
+                "serial_number": "SD-29841",
+                "description": "Shimmy dampener assy, nosewheel",
+                "condition": "new",
+                "vendor": "Chief Aircraft",
+                "faa_8130_reference": "8130-2026-03-0847"
+              }
+            ]
+          }
         },
         {
           "record_hash": "c69ffef2d514d503db96c79e90a1eeff85c7ed1f59d2e05b81ccfec71a21a136",
@@ -38,10 +86,262 @@
           "record_type": "inspection",
           "record_id": "a1b2c3d4-0001-4000-8000-000000000003",
           "server_signature": "2a2e072b57565aa77fdc...",
-          "mechanic_signature": null,
+          "mechanic_signature": "b7d221e3a1094fc882...",
           "ipfs_cid": "QmZmfW8D4DRWVzcPiszdHZr8Pd4EBYUdvHdTT88rJVbFp2",
           "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
-          "created_at": "2026-03-09T14:00:00.000Z"
+          "created_at": "2026-03-05T10:00:00.000Z",
+          "data": {
+            "date_performed": "2026-03-05",
+            "description": "Engine oil change and filter inspection",
+            "ata_chapter": "72",
+            "work_performed": "Drained engine oil (6.5 qts, dark but normal). Cut open oil filter — no metal contamination found. Installed new Champion CH48111-1 oil filter. Refilled with 8 qts AeroShell W100 Plus. Submitted oil sample to Blackstone Labs for analysis. Engine run-up: oil pressure 72 psi, oil temp stabilized at 185F. No leaks observed.",
+            "return_to_service": true,
+            "return_to_service_date": "2026-03-05",
+            "performed_by_name": "Jake Torres",
+            "cert_type": "ap",
+            "cert_number": "AP-4482917",
+            "labor_hours": 1.5,
+            "parts_cost": 42.00,
+            "labor_cost": 127.50,
+            "total_cost": 169.50,
+            "parts": [
+              {
+                "action": "removed",
+                "part_number": "CH48111-1",
+                "serial_number": null,
+                "description": "Oil filter, full-flow",
+                "condition": "scrap"
+              },
+              {
+                "action": "installed",
+                "part_number": "CH48111-1",
+                "serial_number": null,
+                "description": "Oil filter, full-flow",
+                "condition": "new",
+                "vendor": "Aircraft Spruce"
+              }
+            ]
+          }
+        },
+        {
+          "record_hash": "dd44ee55ff667788990011aabbccddee44556677889900aabbccddeeff001122",
+          "previous_hash": "c69ffef2d514d503db96c79e90a1eeff85c7ed1f59d2e05b81ccfec71a21a136",
+          "record_type": "ad_compliance",
+          "record_id": "a1b2c3d4-0001-4000-8000-000000000004",
+          "server_signature": "9f1c3e78ab2d44ee07...",
+          "mechanic_signature": "c8f112a4e7b0039d55...",
+          "ipfs_cid": "QmR47xKLMn3vUwE8d2TzYFhP9JqCs6AN7bGH1KjDmW5pXe",
+          "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
+          "created_at": "2026-03-05T12:00:00.000Z",
+          "data": {
+            "date_performed": "2026-03-05",
+            "description": "Compliance with AD 2024-15-08 — Fuel selector valve inspection",
+            "ata_chapter": "28",
+            "work_performed": "Inspected fuel selector valve P/N 78384 per AD 2024-15-08 para (f). Valve detent mechanism functions correctly in all positions (OFF, L, R, BOTH). No evidence of wear, cracking, or binding. Valve meets all inspection criteria — compliant, no further action required at this time. Next recurring inspection due at 4325.3 TT or 12 months, whichever comes first.",
+            "return_to_service": true,
+            "return_to_service_date": "2026-03-05",
+            "performed_by_name": "Jake Torres",
+            "cert_type": "ia",
+            "cert_number": "IA-4482917",
+            "labor_hours": 0.8,
+            "total_cost": 68.00,
+            "ad_reference": "AD 2024-15-08",
+            "compliance_method": "inspection",
+            "next_due_hours": 4325.3,
+            "next_due_date": "2027-03-05"
+          }
+        }
+      ],
+      "components": [
+        {
+          "component_type": "engine",
+          "position_label": "Engine #1",
+          "make": "Lycoming",
+          "model": "O-360-A4M",
+          "part_number": "LW-16112",
+          "serial_number": "L-38924-51A",
+          "status": "installed",
+          "tsn_hours": 1842.5,
+          "tsn_cycles": 2105,
+          "tso_hours": 342.5,
+          "tso_cycles": 405,
+          "tbo_hours": 2000,
+          "installed_date": "2024-08-15",
+          "installed_at_airframe_hours": 3782.8,
+          "next_due_hours": 5782.8,
+          "life_events": [
+            {
+              "event_type": "overhaul",
+              "date": "2024-08-10",
+              "performed_by": "Penn Yan Aero",
+              "cert_type": "repair_station",
+              "cert_number": "RS-PY-4492",
+              "description": "Major overhaul to new limits. All cylinders replaced, crankshaft reground, camshaft replaced.",
+              "component_tsn_at": 1500.0,
+              "component_tso_at": 0
+            },
+            {
+              "event_type": "install",
+              "date": "2024-08-15",
+              "performed_by": "Jake Torres",
+              "cert_type": "ap",
+              "cert_number": "AP-4482917",
+              "description": "Engine installed after overhaul. New Lord mounts, hoses, baffles.",
+              "airframe_hours_at": 3782.8,
+              "component_tsn_at": 1500.0,
+              "component_tso_at": 0
+            }
+          ]
+        },
+        {
+          "component_type": "propeller",
+          "position_label": "Propeller",
+          "make": "Sensenich",
+          "model": "76EM8S5-0-62",
+          "part_number": "76EM8S5-0-62",
+          "serial_number": "K19842",
+          "status": "installed",
+          "tsn_hours": 4125.3,
+          "tso_hours": 4125.3,
+          "tbo_hours": null,
+          "installed_date": "2016-01-20",
+          "installed_at_airframe_hours": 0,
+          "life_events": [
+            {
+              "event_type": "install",
+              "date": "2016-01-20",
+              "performed_by": "Piper Aircraft",
+              "cert_type": "manufacturer",
+              "description": "Installed at factory — new aircraft delivery",
+              "airframe_hours_at": 0,
+              "component_tsn_at": 0,
+              "component_tso_at": 0
+            }
+          ]
+        },
+        {
+          "component_type": "avionics",
+          "position_label": "GPS/NAV/COM #1",
+          "make": "Garmin",
+          "model": "GNS 430W",
+          "part_number": "011-01060-00",
+          "serial_number": "96712845",
+          "status": "installed",
+          "tsn_hours": 3200.0,
+          "tso_hours": 3200.0,
+          "installed_date": "2019-05-10",
+          "installed_at_airframe_hours": 925.3,
+          "life_events": [
+            {
+              "event_type": "install",
+              "date": "2019-05-10",
+              "performed_by": "Sarasota Avionics",
+              "cert_type": "repair_station",
+              "cert_number": "RS-SA-7721",
+              "description": "Panel upgrade — replaced KX-155 with Garmin GNS 430W",
+              "airframe_hours_at": 925.3,
+              "component_tsn_at": 0,
+              "component_tso_at": 0
+            }
+          ]
+        }
+      ],
+      "reminders": [
+        {
+          "task_name": "Annual Inspection (FAR 91.409)",
+          "task_code": "ANNUAL-001",
+          "source": "faa_regulation",
+          "source_reference": "14 CFR 91.409(a)",
+          "description": "Complete annual inspection per FAR 91.409(a). Must be performed by an appropriately rated IA.",
+          "priority": "required",
+          "interval_hours": null,
+          "interval_calendar_months": 12,
+          "interval_type": "calendar_only",
+          "status": "current",
+          "last_completed_date": "2025-09-15",
+          "last_completed_hours": 3980.0,
+          "next_due_date": "2026-09-15",
+          "next_due_hours": null
+        },
+        {
+          "task_name": "Transponder Inspection (FAR 91.413)",
+          "task_code": "XPONDER-001",
+          "source": "faa_regulation",
+          "source_reference": "14 CFR 91.413",
+          "description": "Transponder and ADS-B system test per FAR 91.413.",
+          "priority": "required",
+          "interval_hours": null,
+          "interval_calendar_months": 24,
+          "interval_type": "calendar_only",
+          "status": "current",
+          "last_completed_date": "2025-09-15",
+          "last_completed_hours": null,
+          "next_due_date": "2027-09-15",
+          "next_due_hours": null
+        },
+        {
+          "task_name": "ELT Battery/Inspection (FAR 91.207)",
+          "task_code": "ELT-001",
+          "source": "faa_regulation",
+          "source_reference": "14 CFR 91.207(d)",
+          "description": "ELT inspection, battery replacement, and functional test.",
+          "priority": "required",
+          "interval_hours": null,
+          "interval_calendar_months": 12,
+          "interval_type": "calendar_only",
+          "status": "current",
+          "last_completed_date": "2025-09-15",
+          "last_completed_hours": null,
+          "next_due_date": "2026-09-15",
+          "next_due_hours": null
+        },
+        {
+          "task_name": "Engine Oil Change",
+          "task_code": "OIL-001",
+          "source": "manufacturer",
+          "source_reference": "Lycoming SB 480F",
+          "description": "Routine engine oil and filter change with oil analysis sample.",
+          "priority": "recommended",
+          "interval_hours": 50,
+          "interval_calendar_months": null,
+          "interval_type": "hours_only",
+          "status": "current",
+          "last_completed_date": "2026-03-05",
+          "last_completed_hours": 4125.3,
+          "next_due_date": null,
+          "next_due_hours": 4175.3
+        },
+        {
+          "task_name": "Spark Plug Inspection/Rotation",
+          "task_code": "SPARK-001",
+          "source": "manufacturer",
+          "source_reference": "Lycoming SI 1042",
+          "description": "Remove, clean, inspect, gap, and rotate spark plugs.",
+          "priority": "recommended",
+          "interval_hours": 100,
+          "interval_calendar_months": null,
+          "interval_type": "hours_only",
+          "status": "current",
+          "last_completed_date": "2025-12-10",
+          "last_completed_hours": 4050.0,
+          "next_due_date": null,
+          "next_due_hours": 4150.0
+        },
+        {
+          "task_name": "AD 2024-15-08 Fuel Selector Valve",
+          "task_code": "AD-2024-15-08",
+          "source": "airworthiness_directive",
+          "source_reference": "AD 2024-15-08",
+          "description": "Recurring inspection of fuel selector valve P/N 78384 for detent wear.",
+          "priority": "required",
+          "interval_hours": 200,
+          "interval_calendar_months": 12,
+          "interval_type": "whichever_first",
+          "status": "current",
+          "last_completed_date": "2026-03-05",
+          "last_completed_hours": 4125.3,
+          "next_due_date": "2027-03-05",
+          "next_due_hours": 4325.3
         }
       ],
       "maintenance_timers": {
@@ -54,8 +354,11 @@
     },
     {
       "aircraft_id": "N12345",
-      "record_count": 2,
-      "chain_head": "aabbccdd11223344...",
+      "make": "Cessna",
+      "model": "172S Skyhawk SP",
+      "total_time_hours": 3250.5,
+      "record_count": 3,
+      "chain_head": "aabbccdd11223344556677889900112233445566778899aabbccddeeff00112233",
       "records": [
         {
           "record_hash": "ff00112233445566778899aabbccddeeff00112233445566778899aabbccddee",
@@ -66,7 +369,17 @@
           "mechanic_signature": null,
           "ipfs_cid": "QmExampleCid1ForN12345RecordNumber1abc",
           "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
-          "created_at": "2026-03-08T09:00:00.000Z"
+          "created_at": "2026-03-08T09:00:00.000Z",
+          "data": {
+            "date_reported": "2026-03-08",
+            "description": "Left magneto drop exceeds 150 RPM during run-up. Max allowable per Lycoming is 175 RPM drop, but sudden onset suggests fouled plugs or impulse coupling issue.",
+            "ata_chapter": "74",
+            "priority": "grounding",
+            "status": "closed",
+            "flight_hours_at": 3245.0,
+            "reported_by_name": "Mark Davis",
+            "reported_by_cert_type": "pilot"
+          }
         },
         {
           "record_hash": "aabbccdd112233445566778899001122334455667788990011223344aabbccdd",
@@ -77,15 +390,225 @@
           "mechanic_signature": "mechsig123...",
           "ipfs_cid": "QmExampleCid2ForN12345RecordNumber2def",
           "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
-          "created_at": "2026-03-08T15:00:00.000Z"
+          "created_at": "2026-03-08T15:00:00.000Z",
+          "data": {
+            "discrepancy_id": "b2c3d4e5-0001-4000-8000-000000000001",
+            "date_performed": "2026-03-08",
+            "description": "Left magneto — cleaned and re-gapped spark plugs, inspected impulse coupling",
+            "ata_chapter": "74",
+            "work_performed": "Removed all 8 bottom spark plugs — #1 and #3 bottom plugs heavily lead-fouled. Cleaned all plugs with vibrator cleaner, re-gapped to 0.016 per Champion SB-308B. Inspected left magneto impulse coupling — spring and flyweight normal, no cracks. Reassembled and performed run-up: L mag drop now 75 RPM, R mag drop 50 RPM — within limits. Lean-of-peak ground run for 3 min to burn off residual lead deposits.",
+            "return_to_service": true,
+            "return_to_service_date": "2026-03-08",
+            "performed_by_name": "Jake Torres",
+            "cert_type": "ap",
+            "cert_number": "AP-4482917",
+            "labor_hours": 1.8,
+            "parts_cost": 0,
+            "labor_cost": 153.00,
+            "total_cost": 153.00,
+            "parts": []
+          }
+        },
+        {
+          "record_hash": "aabbccdd11223344556677889900112233445566778899aabbccddeeff00112233",
+          "previous_hash": "aabbccdd112233445566778899001122334455667788990011223344aabbccdd",
+          "record_type": "component_install",
+          "record_id": "b2c3d4e5-0001-4000-8000-000000000003",
+          "server_signature": "112233aabbcc...",
+          "mechanic_signature": "ddeeff445566...",
+          "ipfs_cid": "QmExampleCid3ForN12345RecordNumber3ghi",
+          "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
+          "created_at": "2026-03-09T10:00:00.000Z",
+          "data": {
+            "date_performed": "2026-03-09",
+            "description": "Replaced vacuum pump — annual inspection finding",
+            "ata_chapter": "36",
+            "work_performed": "Removed dry vacuum pump P/N 215CC S/N VP-4412 at 3250.5 TT. Pump vanes worn beyond serviceable limits found during annual inspection. Installed new pump P/N 215CC S/N VP-8891. Verified suction gauge reads 4.9 in-Hg at idle — within 4.6-5.4 in-Hg limits per Cessna service manual. DG and AI instruments respond normally.",
+            "return_to_service": true,
+            "return_to_service_date": "2026-03-09",
+            "performed_by_name": "Jake Torres",
+            "cert_type": "ap",
+            "cert_number": "AP-4482917",
+            "labor_hours": 1.2,
+            "parts_cost": 495.00,
+            "labor_cost": 102.00,
+            "total_cost": 597.00,
+            "parts": [
+              {
+                "action": "removed",
+                "part_number": "215CC",
+                "serial_number": "VP-4412",
+                "description": "Dry vacuum pump",
+                "condition": "scrap"
+              },
+              {
+                "action": "installed",
+                "part_number": "215CC",
+                "serial_number": "VP-8891",
+                "description": "Dry vacuum pump",
+                "condition": "new",
+                "vendor": "Rapco Inc",
+                "faa_8130_reference": "8130-2026-03-1124"
+              }
+            ]
+          }
+        }
+      ],
+      "components": [
+        {
+          "component_type": "engine",
+          "position_label": "Engine #1",
+          "make": "Lycoming",
+          "model": "IO-360-L2A",
+          "part_number": "LW-16865",
+          "serial_number": "L-42881-51A",
+          "status": "installed",
+          "tsn_hours": 1750.5,
+          "tsn_cycles": 2000,
+          "tso_hours": 250.5,
+          "tso_cycles": 300,
+          "tbo_hours": 2000,
+          "installed_date": "2025-01-20",
+          "installed_at_airframe_hours": 3000.0,
+          "next_due_hours": 5000.0,
+          "life_events": [
+            {
+              "event_type": "overhaul",
+              "date": "2025-01-10",
+              "performed_by": "Mattituck Aviation",
+              "cert_type": "repair_station",
+              "description": "Major overhaul to new limits per Lycoming OH manual",
+              "component_tsn_at": 1500.0,
+              "component_tso_at": 0
+            },
+            {
+              "event_type": "install",
+              "date": "2025-01-20",
+              "performed_by": "Jake Torres",
+              "cert_type": "ap",
+              "cert_number": "AP-4482917",
+              "description": "Engine installed after overhaul",
+              "airframe_hours_at": 3000.0,
+              "component_tsn_at": 1500.0,
+              "component_tso_at": 0
+            }
+          ]
+        },
+        {
+          "component_type": "propeller",
+          "position_label": "Propeller",
+          "make": "McCauley",
+          "model": "1C235/LFA7570",
+          "part_number": "1C235/LFA7570",
+          "serial_number": "AH-77204",
+          "status": "installed",
+          "tsn_hours": 3250.5,
+          "tso_hours": 1250.5,
+          "tbo_hours": 2000,
+          "installed_date": "2022-06-01",
+          "installed_at_airframe_hours": 2000.0,
+          "next_due_hours": 4000.0,
+          "life_events": [
+            {
+              "event_type": "overhaul",
+              "date": "2022-05-28",
+              "performed_by": "Sensenich Propeller",
+              "cert_type": "repair_station",
+              "description": "Propeller overhaul — de-nick, re-pitch, and NDT inspection",
+              "component_tsn_at": 2000.0,
+              "component_tso_at": 0
+            }
+          ]
+        }
+      ],
+      "reminders": [
+        {
+          "task_name": "Annual Inspection (FAR 91.409)",
+          "task_code": "ANNUAL-001",
+          "source": "faa_regulation",
+          "source_reference": "14 CFR 91.409(a)",
+          "description": "Complete annual inspection by an appropriately rated IA.",
+          "priority": "required",
+          "interval_hours": null,
+          "interval_calendar_months": 12,
+          "interval_type": "calendar_only",
+          "status": "current",
+          "last_completed_date": "2025-11-01",
+          "last_completed_hours": 3180.0,
+          "next_due_date": "2026-11-01",
+          "next_due_hours": null
+        },
+        {
+          "task_name": "Transponder Inspection (FAR 91.413)",
+          "task_code": "XPONDER-001",
+          "source": "faa_regulation",
+          "source_reference": "14 CFR 91.413",
+          "description": "Transponder and ADS-B system test.",
+          "priority": "required",
+          "interval_hours": null,
+          "interval_calendar_months": 24,
+          "interval_type": "calendar_only",
+          "status": "due_soon",
+          "last_completed_date": "2024-04-15",
+          "last_completed_hours": null,
+          "next_due_date": "2026-04-15",
+          "next_due_hours": null
+        },
+        {
+          "task_name": "Engine Oil Change",
+          "task_code": "OIL-001",
+          "source": "manufacturer",
+          "source_reference": "Lycoming SB 480F",
+          "description": "Routine engine oil and filter change with oil analysis.",
+          "priority": "recommended",
+          "interval_hours": 50,
+          "interval_calendar_months": null,
+          "interval_type": "hours_only",
+          "status": "due_soon",
+          "last_completed_date": "2026-02-01",
+          "last_completed_hours": 3210.0,
+          "next_due_date": null,
+          "next_due_hours": 3260.0
+        },
+        {
+          "task_name": "Spark Plug Inspection/Rotation",
+          "task_code": "SPARK-001",
+          "source": "manufacturer",
+          "source_reference": "Lycoming SI 1042",
+          "description": "Remove, clean, inspect, gap, and rotate spark plugs.",
+          "priority": "recommended",
+          "interval_hours": 100,
+          "interval_calendar_months": null,
+          "interval_type": "hours_only",
+          "status": "current",
+          "last_completed_date": "2026-03-08",
+          "last_completed_hours": 3245.0,
+          "next_due_date": null,
+          "next_due_hours": 3345.0
+        },
+        {
+          "task_name": "ELT Battery/Inspection (FAR 91.207)",
+          "task_code": "ELT-001",
+          "source": "faa_regulation",
+          "source_reference": "14 CFR 91.207(d)",
+          "description": "ELT inspection, battery replacement, and functional test.",
+          "priority": "required",
+          "interval_hours": null,
+          "interval_calendar_months": 12,
+          "interval_type": "calendar_only",
+          "status": "current",
+          "last_completed_date": "2025-11-01",
+          "last_completed_hours": null,
+          "next_due_date": "2026-11-01",
+          "next_due_hours": null
         }
       ],
       "maintenance_timers": {
         "annual_inspection": { "interval_type": "calendar", "interval_value": 12, "unit": "months" },
-        "progressive_phase_1": { "interval_type": "hours", "interval_value": 200, "unit": "flight_hours" },
-        "progressive_phase_2": { "interval_type": "hours", "interval_value": 400, "unit": "flight_hours" },
-        "progressive_phase_3": { "interval_type": "hours", "interval_value": 600, "unit": "flight_hours" },
-        "progressive_phase_4": { "interval_type": "hours", "interval_value": 800, "unit": "flight_hours" }
+        "100_hour": { "interval_type": "hours", "interval_value": 100, "unit": "flight_hours" },
+        "oil_change": { "interval_type": "hours", "interval_value": 50, "unit": "flight_hours" },
+        "transponder_check": { "interval_type": "calendar", "interval_value": 24, "unit": "months" },
+        "elt_battery": { "interval_type": "calendar", "interval_value": 12, "unit": "months" }
       }
     }
   ],
@@ -93,7 +616,7 @@
     {
       "batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
       "merkle_root": "0xdb62bbc31fdf9588bd3cce35c89a96e58687fbc6f8bb725ae6b6ccd06b57aded",
-      "record_count": 5,
+      "record_count": 7,
       "chain": "private",
       "tx_hash": "0x90f4c8d28dda0e39b08dc86af0f49949e356a215597401544f94f25a46bc9ee1",
       "block_number": 89,
