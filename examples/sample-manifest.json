@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "created_at": "2026-03-09T18:30:00.000Z",
+  "aircraft_count": 2,
+  "total_records": 5,
+  "total_batches": 1,
+  "aircraft": [
+    {
+      "aircraft_id": "N48ZA",
+      "record_count": 3,
+      "chain_head": "c69ffef2d514d503db96c79e90a1eeff85c7ed1f59d2e05b81ccfec71a21a136",
+      "records": [
+        {
+          "record_hash": "050f63652e54cc4c1f9be7ae53503c448e69c8cb85e0ff9314beabcbf365f37e",
+          "previous_hash": null,
+          "record_type": "discrepancy",
+          "record_id": "a1b2c3d4-0001-4000-8000-000000000001",
+          "server_signature": "7da9ff64ae909ecf358dee...",
+          "mechanic_signature": null,
+          "ipfs_cid": "QmcPToVLo2rwQJqKkz8j3ay7pFvx2LK7WGsEU8y2yCXGpS",
+          "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
+          "created_at": "2026-03-09T08:00:00.000Z"
+        },
+        {
+          "record_hash": "281cdc9e751a9ae099f015dd8efce6def32b7dad3fc1d0992fbfb46cffe5023f",
+          "previous_hash": "050f63652e54cc4c1f9be7ae53503c448e69c8cb85e0ff9314beabcbf365f37e",
+          "record_type": "corrective_action",
+          "record_id": "a1b2c3d4-0001-4000-8000-000000000002",
+          "server_signature": "2114b7a3c92b50c24463...",
+          "mechanic_signature": null,
+          "ipfs_cid": "QmT96dA5Au2b7WMSY3cKy8QHrrDR4YQajRZqze2aDKmLXd",
+          "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
+          "created_at": "2026-03-09T12:00:00.000Z"
+        },
+        {
+          "record_hash": "c69ffef2d514d503db96c79e90a1eeff85c7ed1f59d2e05b81ccfec71a21a136",
+          "previous_hash": "281cdc9e751a9ae099f015dd8efce6def32b7dad3fc1d0992fbfb46cffe5023f",
+          "record_type": "inspection",
+          "record_id": "a1b2c3d4-0001-4000-8000-000000000003",
+          "server_signature": "2a2e072b57565aa77fdc...",
+          "mechanic_signature": null,
+          "ipfs_cid": "QmZmfW8D4DRWVzcPiszdHZr8Pd4EBYUdvHdTT88rJVbFp2",
+          "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
+          "created_at": "2026-03-09T14:00:00.000Z"
+        }
+      ],
+      "maintenance_timers": {
+        "annual_inspection": { "interval_type": "calendar", "interval_value": 12, "unit": "months" },
+        "100_hour": { "interval_type": "hours", "interval_value": 100, "unit": "flight_hours" },
+        "oil_change": { "interval_type": "hours", "interval_value": 50, "unit": "flight_hours" },
+        "transponder_check": { "interval_type": "calendar", "interval_value": 24, "unit": "months" },
+        "elt_battery": { "interval_type": "calendar", "interval_value": 12, "unit": "months" }
+      }
+    },
+    {
+      "aircraft_id": "N12345",
+      "record_count": 2,
+      "chain_head": "aabbccdd11223344...",
+      "records": [
+        {
+          "record_hash": "ff00112233445566778899aabbccddeeff00112233445566778899aabbccddee",
+          "previous_hash": null,
+          "record_type": "discrepancy",
+          "record_id": "b2c3d4e5-0001-4000-8000-000000000001",
+          "server_signature": "abcdef123456...",
+          "mechanic_signature": null,
+          "ipfs_cid": "QmExampleCid1ForN12345RecordNumber1abc",
+          "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
+          "created_at": "2026-03-08T09:00:00.000Z"
+        },
+        {
+          "record_hash": "aabbccdd112233445566778899001122334455667788990011223344aabbccdd",
+          "previous_hash": "ff00112233445566778899aabbccddeeff00112233445566778899aabbccddee",
+          "record_type": "corrective_action",
+          "record_id": "b2c3d4e5-0001-4000-8000-000000000002",
+          "server_signature": "fedcba654321...",
+          "mechanic_signature": "mechsig123...",
+          "ipfs_cid": "QmExampleCid2ForN12345RecordNumber2def",
+          "anchor_batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
+          "created_at": "2026-03-08T15:00:00.000Z"
+        }
+      ],
+      "maintenance_timers": {
+        "annual_inspection": { "interval_type": "calendar", "interval_value": 12, "unit": "months" },
+        "progressive_phase_1": { "interval_type": "hours", "interval_value": 200, "unit": "flight_hours" },
+        "progressive_phase_2": { "interval_type": "hours", "interval_value": 400, "unit": "flight_hours" },
+        "progressive_phase_3": { "interval_type": "hours", "interval_value": 600, "unit": "flight_hours" },
+        "progressive_phase_4": { "interval_type": "hours", "interval_value": 800, "unit": "flight_hours" }
+      }
+    }
+  ],
+  "batches": [
+    {
+      "batch_id": "e23eae46-8a8a-41b5-b6fc-c8eb7262185c",
+      "merkle_root": "0xdb62bbc31fdf9588bd3cce35c89a96e58687fbc6f8bb725ae6b6ccd06b57aded",
+      "record_count": 5,
+      "chain": "private",
+      "tx_hash": "0x90f4c8d28dda0e39b08dc86af0f49949e356a215597401544f94f25a46bc9ee1",
+      "block_number": 89,
+      "anchor_status": "anchored",
+      "ipfs_cid_proofs": "QmNrbDHPeYqrtxijnanQXQNVLn5e5k621XWVHPLj1NFGWq",
+      "created_at": "2026-03-09T18:00:00.000Z"
+    }
+  ],
+  "manifest_hash": "8e7aae82261535bce16965b0ffa51d980caae7ec6fe5639fe11f5a2916fd2c73"
+}

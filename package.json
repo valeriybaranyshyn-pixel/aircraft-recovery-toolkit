@@ -1,0 +1,28 @@
+{
+  "name": "aircraft-recovery-toolkit",
+  "version": "1.0.0",
+  "description": "Recover aircraft maintenance records from blockchain + IPFS when everything else is gone",
+  "type": "module",
+  "scripts": {
+    "recover:manifest": "node recovery/method-1-manifest.mjs",
+    "recover:ipfs": "node recovery/method-2-ipfs-discovery.mjs",
+    "recover:blockchain": "node recovery/method-3-blockchain-forensics.mjs",
+    "recover:hybrid": "node recovery/method-4-cross-reference.mjs",
+    "export:excel": "node recovery/export-excel.mjs",
+    "backup:besu": "node recovery/besu-backup.mjs",
+    "gas:analyze": "node docs/gas-cost-analysis.mjs"
+  },
+  "dependencies": {
+    "viem": "^2.31.3",
+    "merkletreejs": "^0.4.0",
+    "crypto-js": "^4.2.0",
+    "exceljs": "^4.4.0"
+  },
+  "keywords": ["aviation", "blockchain", "disaster-recovery", "FAR-43", "maintenance", "IPFS", "merkle-tree", "A&P", "logbook"],
+  "license": "MIT",
+  "author": "myAviationTools",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valequintero/aircraft-recovery-toolkit"
+  }
+}
